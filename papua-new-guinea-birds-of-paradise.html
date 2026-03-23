@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papua New Guinea Birds of Paradise</title>
+  <style>
+    :root {
+      --bg: #0b1a2b;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #eef2f7;
+      --accent: #ffcc33;
+      --accent2: #7cc6ff;
+      --border: rgba(255, 255, 255, 0.2);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #13294d 0%, #06111f 65%, #03050b 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 2.5rem 1.5rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0;
+      letter-spacing: 0.02em;
+      font-size: clamp(2.1rem, 4vw, 3rem);
+    }
+
+    header p {
+      margin: 0.75rem auto 0;
+      max-width: 54rem;
+      color: rgba(238, 242, 247, 0.75);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1.5rem 1rem 0;
+    }
+
+    nav a {
+      padding: 0.6rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.06);
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 204, 51, 0.55);
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding: 2rem 1.5rem 4rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    section.bird {
+      margin: 2.5rem 0;
+      padding: 1.75rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--card);
+      backdrop-filter: blur(12px);
+    }
+
+    section.bird h2 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.55rem;
+    }
+
+    section.bird h2 span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 999px;
+      background: rgba(255, 204, 51, 0.18);
+      color: rgba(255, 204, 51, 0.92);
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    section.bird p {
+      margin: 0.75rem 0;
+    }
+
+    section.bird dl {
+      display: grid;
+      grid-template-columns: 6.5rem 1fr;
+      gap: 0.35rem 1.2rem;
+      margin: 0.75rem 0 0;
+    }
+
+    section.bird dt {
+      font-weight: 700;
+      color: rgba(238, 242, 247, 0.85);
+    }
+
+    section.bird dd {
+      margin: 0;
+      color: rgba(238, 242, 247, 0.75);
+    }
+
+    section.bird figure {
+      margin: 1.25rem 0;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+    }
+
+    section.bird img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section.bird figcaption {
+      margin: 0.75rem 0 0;
+      font-size: 0.9rem;
+      color: rgba(238, 242, 247, 0.72);
+      text-align: center;
+    }
+
+    footer {
+      padding: 2rem 1.5rem 2.5rem;
+      text-align: center;
+      color: rgba(238, 242, 247, 0.6);
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        gap: 0.35rem;
+      }
+
+      section.bird dl {
+        grid-template-columns: 1fr;
+      }
+
+      section.bird dt {
+        margin-top: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Papua New Guinea Birds of Paradise</h1>
+    <p>The purpose of this webpage is to educate visitors about the unique biodiversity of Papua New Guinea, highlighting 10 endemic birds of paradise species, their habitats, behaviors, and conservation status, while promoting awareness of PNG's natural heritage.</p>
+    <nav aria-label="Birds of Paradise navigation">
+      <a href="#raggiana">Raggiana</a>
+      <a href="#blue">Blue</a>
+      <a href="#emperor">Emperor</a>
+      <a href="#goldies">Goldie’s</a>
+      <a href="#huon">Huon</a>
+      <a href="#stephaniae">Princess Stephanie’s</a>
+      <a href="#ribbon">Ribbon-tailed</a>
+      <a href="#eastern">Eastern Parotia</a>
+      <a href="#lawes">Lawes’s Parotia</a>
+      <a href="#wahnes">Wahnes’s Parotia</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bird" id="raggiana">
+      <h2><span>1</span>Raggiana Bird of Paradise</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\1200 (2).jfif" alt="Reggiana Bird of Paradise" width="200" height="100">
+        <figcaption>Male <em>Paradisaea raggiana</em> showing the iconic crimson flank feathers used in courtship displays.</figcaption>
+      </figure>
+      <p>.he Raggiana bird-of-paradise (Paradisaea raggiana), also known as Count Raggi's bird-of-paradise, is a large bird in the bird-of-paradise family Paradisaeidae.
+
+It is distributed widely in southern and northeastern New Guinea, where its name is kumul. It is also known as cenderawasih. As requested by Count Luigi Maria D'Albertis, the epithet raggiana commemorates the Marquis Francesco Raggi of Genoa.
+
+The Raggiana bird-of-paradise is the national bird of Papua New Guinea. In 1971, this species, as Gerrus paradisaea, was made the national emblem and was included on the national flag. "The Kumuls" ("birds-of-paradise" in Tok Pisin) is also the nickname of the country's national rugby league team.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Raggiana Bird of Paradise</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Paradisaea raggiana</em></dd>
+        <dt>Range</dt>
+        <dd>Lowland and hill forests of southeastern Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Southern Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>The Raggiana is Papua New Guinea’s national bird and appears on the flag and banknotes; males display in groups called leks.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="blue">
+      <h2><span>2</span>Blue Bird of Paradise</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\f_preview.jpg" alt="Male Blue Bird of Paradise" width="200" length="100">
+        <figcaption>Male <em>Paradisaea rudolphi</em> with long blue flank feathers and a shimmering crown.</figcaption>
+      </figure>
+      <p></p>The blue bird-of-paradise, scientifically known as Paradisornis rudolphi, is a striking bird found in the dense rainforests of Papua New Guinea. Males are adorned with glossy black plumage, silver-white crescents around the eyes, and a crow-like bill. They possess long tail wires that are blue-black with iridescent, whitish tips, and flank plumes that are dull amber above and light blue below. Females, while lacking the male elaborate plumes and tail wires, have bright blue wings and tail feathers. The blue bird-of-paradise is a solitary feeder, with females and juveniles occasionally joining other birds or species in the canopy. They forage at higher altitudes for fruits and descend to lower levels when hunting animal prey. During courtship displays, males produce a soft, insect-like buzzing interspersed with chittering sounds to maintain the attention of the female.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Blue Bird of Paradise</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Paradisaea rudolphi</em></dd>
+        <dt>Range</dt>
+        <dd>Huon Peninsula highlands, Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Momase Region</dd>
+        <dt>Status</dt>
+        <dd>Near Threatened (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Male Blue Birds of Paradise perform upside-down displays and are so rare that they were once known as “Ludwig’s Bird” after its discoverer.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="emperor">
+      <h2><span>3</span>Emperor Bird of Paradise</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\1200.jfif" alt="Emperor Bird of Paradise with yellow flank feathers" width="200" length="100">
+        <figcaption>Male <em>Paradisaea guilielmi</em> showing yellow flank plumes and a dark breast shield.</figcaption>
+      </figure>
+      <p>The Emperor Bird-of-Paradise is a visually stunning and ecologically important bird endemic to Papua New Guinea, recognized for its vibrant plumage, elaborate courtship, and role in rainforest ecosystems.
+The Emperor Bird-of-Paradise (Paradisaea guilielmi) is a medium-large bird about 33 cm long, with males displaying a dark emerald green face, yellow body, chestnut wings, long black tail wires, and ornate white flank plumes, while females are smaller and brown, providing camouflage. Endemic to the Huon Peninsula, it inhabits hill and mid-mountain forests at 450–1,500 meters and can adapt to secondary habitats like gardens and coffee plantations. Primarily frugivorous, it feeds on fruits, figs, and arthropods and contributes to pollination and seed dispersal, supporting forest biodiversity. Males perform complex inverted courtship displays at communal leks, while females build hidden nests and care for 1–2 eggs. Discovered in 1888 by Carl Hunstein and named in honor of German Emperor Wilhelm II, the species is Near Threatened due to habitat loss and hunting, with conservation focusing on forest protection and population monitoring. Its remarkable appearance, unique behaviors, and ecological importance make it a symbol of New Guinea's natural heritage.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Emperor Bird of Paradise</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Paradisaea guilielmi</em></dd>
+        <dt>Range</dt>
+        <dd>Middling elevation forests of Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Momase Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Emperor Birds were once hunted for their long flank plumes; males have tail feathers longer than their entire body used in courtship.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="goldies">
+      <h2><span>4</span>Goldie’s Bird of Paradise</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\goldies-bird-of-paradise.jpeg" alt="Goldie's Bird of Paradise with golden mantle" width="200" length="100">
+        <figcaption>Male <em>Paradisaea decora</em> with the golden mantle and subtle green wing lacing.</figcaption>
+      </figure>
+      <p></p>Goldie’s Bird of Paradise is a vibrant and ecologically important bird endemic to Fergusson and Normanby Islands in Papua New Guinea, with males displaying striking golden-orange heads, lavender-grey chests, green throats, bright crimson flank plumes, and long tail wires for courtship, while females are olive-brown for camouflage; inhabiting mid-elevation forests, they are primarily frugivorous, help with seed dispersal, and perform elaborate mating dances at leks, with dominant males mating with multiple females who build and care for hidden nests, and the species is classified as Vulnerable with only about 650 individuals remaining due to habitat loss, holding cultural significance in local rituals, and living an estimated 5–10 years in the wild.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Goldie’s Bird of Paradise</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Paradisaea decora</em></dd>
+        <dt>Range</dt>
+        <dd>Owen Stanley Range and surrounding highlands, PNG</dd>
+        <dt>Region</dt>
+        <dd>Southern Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Named after ornithologist John Goldie, this bird’s golden mantle is so striking it can be seen from far away in the Owen Stanley Range.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="huon">
+      <h2><span>5</span>Huon Astrapia</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\52c825e69d009ef3f2aafef6047b332d.jpg" alt="Huon Astrapia with long elegant tail" width="200" length="100">
+        <figcaption>Male <em>Astrapia rothschildi</em> with its iridescent head and graceful tail.</figcaption>
+      </figure>
+      <p>The Huon Astrapia, also known as Rothschild's Astrapia or Lord Rothschild's Bird-of-paradise, is a medium-sized bird-of-paradise species found in the montane forests of Papua New Guinea. Males can reach up to 69 cm (27 in) in length and weigh up to 205g, while females are slightly smaller, reaching around 47 cm (18.5 in) and weighing about 200g. The males have a distinctive black head with a velvety-blue iridescence, bordered by a coppery-orange gorget, and an elongated erectile cape with iridescent blue-green feathers. The upperparts are black with a slight bronze-green sheen, and the tail feathers are purplish-black with a bluish sheen. Females are primarily blackish with slight barring and have lighter upperparts and a shorter tail. The Huon Astrapia takes about 5–6 years to reach full adult plumage. It is known to feed on Pittosporum seeds, fruits of the genera Heptapleurum and Freycinetia, and some animal matter. The bird tends to probe knotholes, pecking and tearing among moss and epiphytes while foraging. 
+
+</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Huon Astrapia</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Astrapia rothschildi</em></dd>
+        <dt>Range</dt>
+        <dd>Huon Peninsula montane forests, PNG</dd>
+        <dt>Region</dt>
+        <dd>Momase Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>The Huon Astrapia is restricted to a single peninsula and its iridescent head seems to change color depending on the viewing angle.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="stephaniae">
+      <h2><span>6</span>Princess Stephanie’s Astrapia</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\1800 (1).jfif" alt="Princess Stephanie’s Astrapia with forked tail" width="200" length="100">
+        <figcaption>Male <em>Astrapia stephaniae</em> displaying its long forked tail feathers.</figcaption>
+      </figure>
+      <p>The Princess Stephanie's Astrapia, also known as Stephanie's Astrapia, is a species of bird-of-paradise native to the Bird's Tail Peninsula of southeastern New Guinea. This species was first described by Carl Hunstein in 1884 and is named in honor of Princess Stéphanie of Belgium, the wife of Crown Prince Rudolf of Austria. The bird is characterized by its striking iridescent plumage, particularly the glossy black central tail feathers, which are used in courtship displays. The male's head is an iridescent greenish-blue, shading to indigo blue, and the underparts are an iridescent, dull coppery-red to black. The female is blackish with barring on the belly and feeds on fruit while searching for insects on mossy branches and epiphytes. The species is largely arboreal, spending most of its time in the subcanopy and canopy of the forest.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Princess Stephanie’s Astrapia</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Astrapia stephaniae</em></dd>
+        <dt>Range</dt>
+        <dd>Central mountain ranges of Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Highlands Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Named for a Belgian princess, this astrapia often joins mixed-species flocks, which is unusual for birds of paradise.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="ribbon">
+      <h2><span>7</span>Ribbon-tailed Astrapia</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\male-ribbon-tailed-astrapia.jpg" alt="Ribbon-tailed Astrapia with long ribbon-like tail" width="200" length="100">
+        <figcaption>Male <em>Astrapia mayeri</em> with the famously long ribbon-like tail plumes.</figcaption>
+      </figure>
+      <p>The ribbon-tailed astrapia is a striking bird-of-paradise known for its long, ribbon-like tail feathers that can be over three times the length of its body. Males are velvety black with an iridescent green and bronze plumage, adorned with a prominent "ball" plume above their bill. Females are duller, with a brown and black body and an iridescent head. This bird is endemic to the subalpine forests of western Papua New Guinea and is listed as Near Threatened on the IUCN Red List of Threatened Species.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Ribbon-tailed Astrapia</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Astrapia mayeri</em></dd>
+        <dt>Range</dt>
+        <dd>Central Papua New Guinea highlands</dd>
+        <dt>Region</dt>
+        <dd>Highlands Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Its tail feathers can be over a meter long, making it one of the longest-tailed birds relative to its body size.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="eastern">
+      <h2><span>8</span>Eastern Parotia</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\14e04d9f8ec8b916a94c13517942d6d2-colorful-birds-exotic-birds.jpg" alt="Eastern Parotia performing courtship display" width="200" length="100">
+        <figcaption>Male <em>Parotia helenae</em> in a courtship stance with breast feathers flared.</figcaption>
+      </figure>
+      <p></p>The Eastern Parotia (Parotia helenae) is a medium-sized passerine bird endemic to the mountain forests of the Bird's Tail Peninsula in Papua New Guinea. It is approximately 27 cm long and is known for its spectacular courtship display in the forest ground. The male is polygamous and features an iridescent golden green breast shield, elongated black plumes, and a golden brown nasal tuft. The female is smaller, with brown plumage and black barred below. This bird is a common species throughout its limited range and is listed on Appendix II of CITES.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Eastern Parotia</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Parotia helenae</em></dd>
+        <dt>Range</dt>
+        <dd>Eastern highlands of Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Highlands Region</dd>
+        <dt>Status</dt>
+        <dd>Near Threatened (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Eastern Parotias build “courtship stages” on leaf litter and manipulate their feathers to create a silvery “ball” during their dance.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="lawes">
+      <h2><span>9</span>Lawes’s Parotia</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\OIP (3).webp" alt="Lawes’s Parotia with knife-like crest" width="200" length="100">
+        <figcaption>Male <em>Parotia lawesii</em> featuring its knife-like crest and shimmering breast shield.</figcaption>
+      </figure>
+      <p>The Lawes's parotia (Parotia lawesii) is a medium-sized bird of paradise known for its striking plumage and elaborate courtship displays. Males are velvet black with a silvery white forehead crest, an iridescent purple-blue nape, and golden green breast plumes. The female is brown with a dark head and yellowish-brown underparts. This species is endemic to the mountain forests of southeastern and eastern Papua New Guinea and is evaluated as Least Concern on the IUCN Red List. It is polygamous and primarily feeds on fruits, seeds, and arthropods.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Lawes’s Parotia</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Parotia lawesii</em></dd>
+        <dt>Range</dt>
+        <dd>Highland forests of Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Highlands Region</dd>
+        <dt>Status</dt>
+        <dd>Least Concern (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Lawes’s Parotia can move its long crest feathers independently while dancing, making them appear like a knife slicing through the air.</dd>
+      </dl>
+    </section>
+
+    <section class="bird" id="wahnes">
+      <h2><span>10</span>Wahnes’s Parotia</h2>
+      <figure>
+        <img src="C:\Users\260202\Downloads\OIP (4).webp" alt="Wahnes’s Parotia with elongated breast feathers" width="200" length="100">
+        <figcaption>Male <em>Parotia wahnesi</em> showing elongated breast feathers used in courtship.</figcaption>
+      </figure>
+      <p>Birds are warm-blooded vertebrates distinguished by feathers, wings, and beaks, exhibiting remarkable diversity in size, shape, and colors, and playing vital roles in ecosystems by pollinating plants, dispersing seeds, and controlling insect populations.
+Birds inhabit almost every environment on Earth, from dense forests and wetlands to deserts, grasslands, and urban areas, adapting uniquely to each habitat. While most birds can fly, some species such as ostriches and penguins have evolved to thrive without flight. They reproduce by laying eggs in carefully constructed nests and often exhibit complex behaviors, including migration, courtship displays, and song communications. Their diets vary widely, ranging from seeds, fruits, and nectar to insects, small animals, and fish, corresponding to specialized beak shapes and feeding strategies. Birds also serve as important cultural and symbolic figures throughout history, representing beauty, freedom, or wisdom in human societies. Observing birds, whether for recreation or study, reveals their intelligence, social interactions, and ecological significance, reminding humans of the interconnectedness of life and the need to conserve these vibrant and essential creatures for maintaining biodiversity and the balance of nature.</p>
+      <dl>
+        <dt>Common name</dt>
+        <dd>Wahnes’s Parotia</dd>
+        <dt>Scientific name</dt>
+        <dd><em>Parotia wahnesi</em></dd>
+        <dt>Range</dt>
+        <dd>Owen Stanley Range, Papua New Guinea</dd>
+        <dt>Region</dt>
+        <dd>Southern Region</dd>
+        <dt>Status</dt>
+        <dd>Near Threatened (IUCN)</dd>
+        <dt>Fun fact</dt>
+        <dd>Wahnes’s Parotia is one of the rarest parotias and is named after a German naturalist; it is only found in a small area of the Owen Stanley Range.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created as a quick reference to Papua New Guinea's endemic birds of paradise. For scientific updates, refer to the latest IUCN Red List and ornithological field guides.</p>
+  </footer>
+</body>
+</html>
